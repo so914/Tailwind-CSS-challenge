@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>jour #6</title>
+</head>
+<body>
+    <h3 class="text-center m-6">Mon robbot</h3>
+    <div class="container p-5 grid grid-cols-2">
+        <!--corps-->
+        <div class="corps grid justify-items-center">
+            <!--la tête-->
+            <div class="w-30 h-20 border-1 border-[lightgray] rounded-3xl grid justify-items-center content-center  shadow-sm">
+                <!--yeux-->
+                <div class="flex gap-4">
+                    <div class="size-8 rounded-full border-1 border-[lightgray] flex justify-center items-center">
+                        <div class="bg-gray-600 size-2 rounded-full"></div>
+                    </div>
+                    <div class="size-8 rounded-full border-[lightgray] border-1 flex justify-center items-center">
+                        <div class="bg-gray-600 size-2 rounded-full"></div>
+                    </div>
+                </div>
+                <!--nez-->
+                <div class="bg-black size-2 rounded-full"></div>
+                <!--bouche-->
+                <div class="bg-gray-600 w-[24px] h-[4px] mt-2"></div>
+            </div>
+            <!--tronc-->
+            <div class="tronc flex mt-[-12px]">
+                
+                <!--bras-->
+                <!--bras gauche-->
+                <div class="w-6 h-22 rotate-42  border-1 border-[lightgray] rounded-b-xl"></div>
+                <!--ventre-->
+                <div class="w-38 h-22 bg-blue-700 relative rounded-3xl overflow-hidden z-10 hover:bg-blue-950 transition-all duration-200">
+                    <p class="text-xl text-white text-center mt-4">Bob</p>
+                </div>
+                <!--bras droit-->
+                <div class="border-1 border-[lightgray] w-6 h-22 rotate-138 rounded-t-xl"></div>
+            </div>
+
+            <!--pieds-->
+            <div class="grid grid-cols-2 gap-4 mt-[-20px]">
+                <div class="w-8 border-1 border-[lightgray] h-10 rounded-b-md"></div>
+                <div class="w-8 border-1 border-[lightgray] h-10 rounded-b-md"></div>
+            </div>
+        </div>
+        
+
+        <div class="size-30 mt-30 ml-[-180px] bg-gray-600 animate-spin rounded-full hover:translate-x-[400px] transition-all duration-200">
+
+        </div>
+
+
+        
+       <div class="container mt-[120px] flex">
+         <div class="size-96 ">
+            <img src="./ChatGPT Image 3 févr. 2026, 16_58_08.png" alt="" class="object-cover">
+        </div>
+         <div class="size-96 ">
+            <img src="./ChatGPT Image 3 févr. 2026, 16_58_08.png" alt="" class="object-contain">
+        </div>
+       </div>
+    </div>
+
+
+
+    <!--flex-->
+    <div class="flex content-center justify-center mb-6 px-4">
+        <div class="item1 bg-red-900 p-4">item1</div>
+        <div class="item2 bg-gray-600 p-4 grow ">item2 utilisant grow</div>
+        <div class="item3 bg-black p-4">item3</div>
+    </div>
+    <div class="flex content-center justify-center mb-6 px-4">
+        <div class="item1 bg-red-900 p-4 flex-1">item1 utilsant flex-1</div>
+        <div class="item2 bg-gray-600 p-4 ">item2</div>
+        <div class="item3 bg-black p-4 flex-1">item3 utilsant flex-1</div>
+    </div>
+
+</body>
+</html>

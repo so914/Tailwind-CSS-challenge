@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>jour #8</title>
+</head>
+<body>
+    
+    <!--header-->
+    <header class="w-full bg-black h-12 shadow-lg fixed top-0 bottom-6 absolute z-8 md:h-14 xl:h-18">
+        <div class="flex justify-between px-3 items-center md:px-8 md:py-3 xl:py-4 xl:mb-8 xl:me-6">
+            <h2 class="font-bold text-white text-xl xl:text-2xl">Milly<span class="text-orange-500">Food</span></h2>
+            <nav>
+                <ul class="hidden md:inline-flex md:gap-4 md:text-md xl:text-xl text-orange-500 xl:gap-8">
+                    <li><a class="hover:underline decoration-orange-500 decoration-2 transition-all duration-200 underline-offset-6 hover:text-white" href="#">Accueil</a></li>
+                    <li><a class="hover:underline decoration-orange-500 decoration-2 transition-all duration-200 underline-offset-6 hover:text-white" href="#">Plats</a></li>
+                    <li><a class="hover:underline decoration-orange-500 decoration-2 transition-all duration-200 underline-offset-6 hover:text-white" href="#">Services</a></li>
+                    <li><a class="hover:underline decoration-orange-500 decoration-2 transition-all duration-200 underline-offset-6 hover:text-white" href="#">A propos</a></li>
+                    <li><a class="hover:underline decoration-orange-500 decoration-2 transition-all duration-200 underline-offset-6 hover:text-white" href="#">Contact</a></li>
+                </ul>
+                <button class="size-8 rounded-md mt-2 border-none bg-white md:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!--hero-->
+        <section class="mx-0 px-0">
+            <div class="pt-12 bg-orange-500 flex flex-nowrap gap-2 lg:gap-0 h-120 xl:mt-8 xl:pb-8 xl:h-210 lg:h-192 w-full md:h-screen md:grid md:grid-cols-2 md:pt-16 pb-2 lg:w-full">
+                <div class="min-w-1/3 mx-4 my-2 grid gap-2">
+                    <div class="bg-cover bg-center size-28 translate-x-12 md:size-40 lg:size-42 lg:translate-x-120  md:bg-top rounded-full md:translate-x-66" style="background-image: url(pexels-ash-craig-122861-376464.jpg);"></div>
+                    <div class="flex">
+                      <div class="bg-cover bg-center size-28  md:size-40 md:bg-top  lg:size-42 rounded-full lg:translate-y-20 lg:ml-4" style="background-image: url(pexels-chanwalrus-958546.jpg);"></div>
+                      <div class="bg-cover bg-center size-28 lg:translate-x-12 lg:size-42 lg:-translate-y-36 hidden lg:inline-flex md:size-40 md:bg-left rounded-full" style="background-image: url(pexels-yente-van-eynde-1263034-2403392.jpg);"></div>
+                    </div>
+                    <div class="bg-cover bg-center size-28 lg:translate-x-42  lg:size-42 lg:translate-y-26 translate-x-12 hidden md:inline-flex md:size-40 md:bg-center rounded-full md:translate-y-20" style="background-image: url(pexels-nadin-sh-78971847-17906661.jpg);"></div>
+                     <div class="bg-cover bg-center size-28 translate-x-12 lg:size-42 lg:translate-x-120 md:size-40 md:bg-top rounded-full md:translate-x-70" style="background-image: url(pexels-karolina-grabowska-5718029.jpg);"></div>
+                  </div>
+                <div class="text-justify grid text-[12px] content-center relative bg-black h-full mt-1 w-full font-bold pe-3 ps-5 text-white rounded-l-full md:text-xl md:px-6 lg:w-full xl:px-12">
+                  <h2 class="absolute text-9xl translate-y-80 -translate-x-130 font-['Great_Vibes'] drop-shadow-[0_1.2px_1.2px_rgba(249,115,22,1)] shadow-lg">Foods</h2> 
+                  <h1>Des saveurs uniques et authentiques.</h1>
+                    <p>Enflammez vos papilles dès maintenant et voyagez au
+                      coeur des saveurs inoubliables.</p>
+                    <button class="border-none rounded-full w-[180px] py-2 px-4 bg-orange-500 mt-4 text-black hover:text-white cursor-pointer">Commandez</button>
+                </div>
+            </div>
+        </section>
+
+        <!--plats-->
+        <section>
+  <div class="bg-black h-full w-full xl:pt-8">
+
+    <h2 class="text-white text-xl text-center py-6 lg:text-[32px]">Nos plats</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:w-full xl:py-8 xl:flex xl:overflow-x-scroll xl:px-6 content-center gap-12 justify-items-center">
+
+      <div class="w-70 h-72 xl:shrink-0 rounded-md bg-white shadow-xl relative md:w-74 md:h-78 xl:w-84 xl:h-88 lg:w-78 lg:h-80 hover:translate-y-2 transition-all duration-200  xl:hover:scale-85">
+
+        <img src="pexels-karan-mridha-17124288-32825908.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm xl:text-[15px] xl:pt-1">
+
+          <h4>Nom: Riz sauté accompagné de viande de boeuf</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 15¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between mt-1 md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+           
+      <div class="w-70 h-72 rounded-md bg-white shadow-xl  xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karolina-grabowska-5718029.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Poulet au four accompagné de légumes rôtis</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 30¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between mt-1 md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer ">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="w-70 h-72 rounded-md bg-white shadow-xl  xl:shrink-0  xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karolina-grabowska-5718029.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Poulet au four accompagné de légumes rôtis</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 30¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between mt-1 md:mt-3 xl:mt-4  md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer ">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+<div class="w-70 h-72 rounded-md bg-white shadow-xl xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karan-mridha-17124288-32825908.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Riz sauté accompagné de viande de boeuf</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 15¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+<div class="w-70 h-72 rounded-md bg-white shadow-xl xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karan-mridha-17124288-32825908.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Riz sauté accompagné de viande de boeuf</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 15¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between mt-1 md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+           
+      <div class="w-70 h-72 rounded-md bg-white shadow-xl  xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karolina-grabowska-5718029.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Poulet au four accompagné de légumes rôtis</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 30¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] mt-1  justify-between md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer ">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="w-70 h-72 rounded-md bg-white shadow-xl  xl:shrink-0  xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karolina-grabowska-5718029.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Poulet au four accompagné de légumes rôtis</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 30¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between mt-1 md:mt-3 xl:mt-4  md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer ">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+<div class="w-70 h-72 rounded-md bg-white shadow-xl xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karan-mridha-17124288-32825908.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Riz sauté accompagné de viande de boeuf</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 15¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] mt-1  justify-between md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      
+      <div class="w-70 h-72 rounded-md bg-white shadow-xl xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karolina-grabowska-5718029.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Poulet au four accompagné de légumes rôtis</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 30¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] mt-1 justify-between md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer ">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="w-70 h-72 rounded-md bg-white shadow-xl xl:shrink-0 xl:w-84 xl:h-88 lg:w-78 lg:h-80 relative md:w-74 md:h-78 hover:translate-y-2 transition-all duration-200 xl:hover:scale-85">
+
+        <img src="pexels-karan-mridha-17124288-32825908.jpg" alt="plat" class="object-cover w-full">
+
+        <div class="px-2 text-sm">
+
+          <h4>Nom: Riz sauté accompagné de viande de boeuf</h4>
+
+          <p class="line-clamp-1">
+            Desciption: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="bg-white border-none rounded-md absolute top-2 p-2 right-2">
+            Prix: 15¥
+          </p>
+
+          <div class="flex gap-6 text-[11px] justify-between mt-1 md:mt-3 xl:mt-4 md:text-[13px] ">
+
+            <button class="border-none rounded-md bg-orange-500 py-2 px-2">
+              Commander
+            </button>
+
+            <button class="border border-orange-500 rounded-md py-2 px-2 md:px-3 hover:bg-black hover:text-orange-500 hover:border-none transition-all duration-200 cursor-pointer">
+              Voir plus
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+ 
+
+
+      
+    </div>
+
+    <a href="#" class="text-white text-sm flex mt-6 justify-end pe-3 pb-2 underline underline-offset-4">Voir plus</a>
+
+  </div>
+</section>
+
+<!--le plat du jour-->
+  <section>
+    <div>
+
+    </div>
+  </section>
+
+
+        <!--A propos de nous-->
+        <section class="bg-gray-200 ">
+            <div>
+                <h2 class="py-4 text-center">A propos de nous</h2>
+                <div class="md:grid grid-cols-2 h-screen px-5">
+                  <h5 class="font-bold">L'art de la table sans frontières</h5>
+                  <p class="text-justify">
+                    Chez <span class="font-bold">Milly<span class="text-orange-500">Food</span></span>, nous croyons que la cuisine est un langage universel qui rassemble les gens. Notre aventure est née d'une ambition simple mais audacieuse : briser les barrières culinaires pour offrir, sous un même toit, le meilleur des saveurs du monde.
+Plus qu'un simple restaurant, MillyFood est une destination pour les explorateurs du goût. Notre brigade de passionnés maîtrise les techniques de tous les types de cuisines, des recettes traditionnelles réconfortantes aux créations contemporaines les plus audacieuses. Que vous ayez envie de la finesse de la gastronomie française, de la chaleur des épices d'ailleurs ou de la générosité des plats fusion, nous mettons un point d'honneur à ce que chaque bouchée soit une révélation. <br>
+Notre engagement ? L'excellence avant tout. Nous sélectionnons rigoureusement nos produits pour leur fraîcheur et leur qualité, car une cuisine d'exception commence toujours par des ingrédients vrais.
+Venez partager un moment de convivialité chez MillyFood, là où chaque repas raconte une histoire différente.
+                  </p>
+                    <div class="w-full h-120 hidden md:inline-flex lg:inline-flex xl:inline-flex">
+                        <img class="objet-cover w-full h-full" src="pexels-cottonbro-5371583.jpg" alt="serveur">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
